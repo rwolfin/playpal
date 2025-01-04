@@ -1,0 +1,32 @@
+function downloadVideo() {
+    const url = document.getElementById("url").value;
+    const videoContainer = document.getElementById('video-container');
+    videoContainer.innerHTML = 'Загрузка...';
+
+    fetch('download.php', {
+        method: 'POST',
+        headers: {
+            'Content-Type': 'application/x-www-form-urlencoded',
+        },
+        body: `url=${encodeURIComponent(url)}`,
+    })
+        .then(response => {
+            if (!response.ok) {
+                throw new Error(`HTTP error! Status: ${response.status}`);
+            }
+            return response.blob(); // Изменяем на blob
+        })
+        .then(blob => {
+           const videoURL = URL.createObjectURL(blob);
+           videoContainer.innerHTML = `<video controls width="100%"><source src="${videoURL}" type="video/mp4"></video>`;
+        })
+       .catch(error => {
+            console.error("Ошибка:", error);
+           videoContainer.innerHTML = `Ошибка: ${error.message}`;
+        });
+		.catch(done => {
+		console.log("Лог:", done.urlYT);
+		alert('Ошибка: ', done.urlYT);
+		});
+
+}

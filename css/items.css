@@ -1,0 +1,262 @@
+body {
+    margin: 0;
+    font-family: sans-serif;
+    min-height: 100vh;
+    box-sizing: border-box;
+    display: flex;
+    align-items: center;
+    background: rgb(245, 245, 245);
+
+}
+    
+    header {
+        background: #000;
+    }
+    
+    .flex {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+    
+    }
+    
+    a {
+        color: #ff0000;
+    }
+    
+    span.git {
+        font-size: 25px;
+        color: #fff;
+        font-weight: bold;
+    
+    }
+    
+    ul {
+        list-style-type: none;
+        padding: 0px;
+        line-height: 1.7;
+    }
+    
+    strong {
+        font-size: 20px;
+    }
+    
+    .button-img {
+        vertical-align: sub;
+        width: 20px;
+        margin-left: 5px;
+    }
+    
+    .button-text {
+        padding-right: 10px;
+        border-right: 1px solid #fff;
+        vertical-align: top;
+    }
+    
+    .btn {
+        color: #fff;
+        background-color:#1f883d ;
+        border-color: #1f883d;
+        padding: 8px 15px;
+        border-radius: 4px;
+        text-decoration: none;
+    }
+    
+    
+    
+
+    
+    .container {
+        width: 100%;
+        max-width: 960px;
+        margin-left: auto;
+        margin-right: auto;
+        padding-left: 15px;
+        padding-right: 15px;
+        box-sizing: border-box;
+        text-align: center;
+    }
+
+
+    button {
+        box-shadow: inset 0px 1px 0px 0px #ffffff;
+        background: linear-gradient(to bottom, #ededed 5%, #dfdfdf 100%);
+        background-color: #ededed;
+        border-radius: 6px;
+        border: 1px solid #dcdcdc;
+        display: inline-block;
+        cursor: pointer;
+        color: #777777;
+        font-family: Arial;
+        font-size: 20px;
+        font-weight: bold;
+        padding: 14px 24px;
+        text-decoration: none;
+        text-shadow: 0px 1px 0px #ffffff;
+        margin-top: 20px;
+    }
+
+
+
+    
+    input#url {
+        width: 100%;
+        text-align: center;
+        padding: 17px 0;
+        border: 1px solid #ddd;
+        border-radius: 9px;
+        -webkit-box-shadow: 3px 2px 8px 0px rgba(34, 60, 80, 0.2) inset;
+        -moz-box-shadow: rgb(34 60 80 / 11%);
+        box-shadow: 3px 2px 8px 0px rgb(34 60 80 / 11%) inset;
+    }
+
+    button {
+    box-shadow: inset 0px 1px 0px 0px #ffffff;
+    background: linear-gradient(to bottom, #ededed 5%, #dfdfdf 100%);
+    background-color: #ededed;
+    border-radius: 6px;
+    border: 1px solid #dcdcdc;
+    display: inline-block;
+    cursor: pointer;
+    color: #777777;
+    font-family: Arial;
+    font-size: 20px;
+    font-weight: bold;
+    padding: 14px 24px;
+    text-decoration: none;
+    text-shadow: 0px 1px 0px #ffffff;
+    margin-top: 20px;
+}
+
+    button:hover{
+    background:linear-gradient(to bottom, #dfdfdf 5%, #ededed 100%);
+	background-color:#dfdfdf;
+    }    
+
+    button:active{
+        position:relative;
+        top:1px;
+    }
+
+    .qr{
+   
+        padding:20px;
+        background:#fff;
+        border-radius:10px;
+        width: 250px;
+        
+    }
+    
+    .container img {
+        margin: auto;
+        display: block;
+
+    }
+
+    .row {
+        display: flex;
+        justify-content: space-between;
+        flex-wrap: wrap; /* ГђВ ГђВ°ГђВ·Г‘в‚¬ГђВµГ‘Л†ГђВ°ГђВµГђВј ГђВїГђВµГ‘в‚¬ГђВµГђВЅГђВѕГ‘ВЃ ГђВЅГђВ° ГђВЅГђВѕГђВІГ‘Ж’Г‘ЕЅ Г‘ВЃГ‘вЂљГ‘в‚¬ГђВѕГђВєГ‘Ж’ */
+        margin-left: -15px; /* ГђЕЎГђВѕГђВјГђВїГђВµГђВЅГ‘ВЃГђВёГ‘в‚¬Г‘Ж’ГђВµГђВј ГђВѕГ‘вЂљГ‘ВЃГ‘вЂљГ‘Ж’ГђВїГ‘вЂ№ ГђВєГђВѕГђВ»ГђВѕГђВЅГђВѕГђВє */
+        margin-right: -15px;
+    }
+    
+    [class*="col-"] {
+        padding-left: 15px; /* ГђЕѕГ‘вЂљГ‘ВЃГ‘вЂљГ‘Ж’ГђВїГ‘вЂ№ Г‘ВЃГђВ»ГђВµГђВІГђВ° ГђВё Г‘ВЃГђВїГ‘в‚¬ГђВ°ГђВІГђВ° ГђВґГђВ»Г‘ВЏ ГђВєГђВѕГђВ»ГђВѕГђВЅГђВѕГђВє */
+        padding-right: 15px;
+        box-sizing: border-box; /* ГђвЂ™ГђВєГђВ»Г‘ЕЅГ‘вЂЎГђВ°ГђВµГђВј padding ГђВІ Г‘Л†ГђВёГ‘в‚¬ГђВёГђВЅГ‘Ж’ */
+        width: 100%; /* ГђЕёГђВѕ Г‘Ж’ГђВјГђВѕГђВ»Г‘вЂЎГђВ°ГђВЅГђВёГ‘ЕЅ, ГђВєГђВ°ГђВ¶ГђВґГђВ°Г‘ВЏ ГђВєГђВѕГђВ»ГђВѕГђВЅГђВєГђВ° ГђВЅГђВ° ГђВІГ‘ВЃГ‘ЕЅ Г‘Л†ГђВёГ‘в‚¬ГђВёГђВЅГ‘Ж’ */
+    }
+    
+    /* ГђВќГђВ°Г‘ВЃГ‘вЂљГ‘в‚¬ГђВѕГђВ№ГђВєГђВё ГђВґГђВ»Г‘ВЏ Г‘ВЌГђВєГ‘в‚¬ГђВ°ГђВЅГђВѕГђВІ Г‘ВЃГ‘в‚¬ГђВµГђВґГђВЅГђВµГђВіГђВѕ Г‘в‚¬ГђВ°ГђВ·ГђВјГђВµГ‘в‚¬ГђВ° ГђВё ГђВ±ГђВѕГђВ»Г‘Е’Г‘Л†ГђВµ (ГђВЅГђВ°ГђВїГ‘в‚¬ГђВёГђВјГђВµГ‘в‚¬, ГђВїГђВ»ГђВ°ГђВЅГ‘Л†ГђВµГ‘вЂљГ‘вЂ№) */
+    @media (min-width: 768px) {
+        .col-1 { width: calc(100% / 16); }
+        .col-2 { width: calc(100% / 16 * 2); }
+        .col-3 { width: calc(100% / 16 * 3); }
+        .col-4 { width: calc(100% / 16 * 4); }
+        .col-5 { width: calc(100% / 16 * 5); }
+        .col-6 { width: calc(100% / 16 * 6); }
+        .col-7 { width: calc(100% / 16 * 7); }
+        .col-8 { width: calc(100% / 16 * 8); }
+        .col-9 { width: calc(100% / 16 * 9); }
+        .col-10 { width: calc(100% / 16 * 10); }
+        .col-11 { width: calc(100% / 16 * 11); }
+        .col-12 { width: calc(100% / 16 * 12); }
+        .col-13 { width: calc(100% / 16 * 13); }
+        .col-14 { width: calc(100% / 16 * 14); }
+        .col-15 { width: calc(100% / 16 * 15); }
+        .col-16 { width: 100%; }
+    }
+    
+    /* ГђВќГђВ°Г‘ВЃГ‘вЂљГ‘в‚¬ГђВѕГђВ№ГђВєГђВё ГђВґГђВ»Г‘ВЏ ГђВ±ГђВѕГђВ»Г‘Е’Г‘Л†ГђВёГ‘вЂ¦ Г‘ВЌГђВєГ‘в‚¬ГђВ°ГђВЅГђВѕГђВІ (ГђВЅГђВ°ГђВїГ‘в‚¬ГђВёГђВјГђВµГ‘в‚¬, ГђВЅГђВ°Г‘ВЃГ‘вЂљГђВѕГђВ»Г‘Е’ГђВЅГ‘вЂ№ГђВµ ГђВєГђВѕГђВјГђВїГ‘Е’Г‘ЕЅГ‘вЂљГђВµГ‘в‚¬Г‘вЂ№) */
+    @media (min-width: 992px) {
+        .col-lg-1 { width: calc(100% / 16); }
+        .col-lg-2 { width: calc(100% / 16 * 2); }
+        .col-lg-3 { width: calc(100% / 16 * 3); }
+        .col-lg-4 { width: calc(100% / 16 * 4); }
+        .col-lg-5 { width: calc(100% / 16 * 5); }
+        .col-lg-6 { width: calc(100% / 16 * 6); }
+        .col-lg-7 { width: calc(100% / 16 * 7); }
+        .col-lg-8 { width: calc(100% / 16 * 8); }
+        .col-lg-9 { width: calc(100% / 16 * 9); }
+        .col-lg-10 { width: calc(100% / 16 * 10); }
+        .col-lg-11 { width: calc(100% / 16 * 11); }
+        .col-lg-12 { width: calc(100% / 16 * 12); }
+        .col-lg-13 { width: calc(100% / 16 * 13); }
+        .col-lg-14 { width: calc(100% / 16 * 14); }
+        .col-lg-15 { width: calc(100% / 16 * 15); }
+        .col-lg-16 { width: 100%; }
+    }
+    
+    
+    /* Стили для контейнера чекбокса */
+.toggle-container {
+    display: inline-flex;
+    align-items: center;
+    margin: 10px 0;
+}
+/* Скрываем стандартный чекбокс */
+.toggle-checkbox {
+    position: absolute;
+    opacity: 0;
+    cursor: pointer;
+    height: 0;
+    width: 0;
+}
+
+/* Стилизуем метку под кнопку */
+.toggle-label {
+    display: inline-block;
+    width: 50px; /* ширина кнопки */
+    height: 30px; /* высота кнопки */
+    background-color: #ccc; /* цвет выключенного состояния */
+    border-radius: 15px; /* скругление краев */
+    position: relative;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+/* Создаем "переключатель" внутри кнопки */
+.toggle-label::after {
+    content: "";
+    position: absolute;
+    width: 26px; /* ширина переключателя */
+    height: 26px; /* высота переключателя */
+    background-color: white;
+    border-radius: 50%;
+    top: 2px;
+    left: 2px;
+    transition: left 0.3s; /* плавное перемещение */
+}
+
+/* При нажатии на чекбокс меняем цвет и положение переключателя */
+.toggle-checkbox:checked + .toggle-label {
+    background-color: #4cd964; /* цвет включенного состояния */
+}
+.toggle-checkbox:checked + .toggle-label::after {
+    left: 22px; /* перемещаем переключатель вправо */
+}
+
+/* стилизация текста */
+.toggle-text{
+    margin-left: 10px;
+}
